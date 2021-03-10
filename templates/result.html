@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/lib/bootstrap.css">
+<link rel="stylesheet" href="static/css/styles.css">
+<script src="static/js/lib/jquery-3.5.1.min.js"></script>
+<script src="static/js/lib/bootstrap.min.js"></script>
+</head>     
+<body id="other" style="background-image: url('static/css/airport.jpg');">
+  <h4 style="text-align:center; margin-top: 20px;">{{airport}}</h4>
+  <div style="text-align: center;margin:10px;"><a href="{{url_for('result1',airport=airport)}}">For Parking info click here</a></div>
+  <!--<table>-->
+<div class="container">
+  	{% for path in pic %}
+  	<!--<tr>
+  	<td>-->
+      <div class="row">
+     <div class="col-md-6 col-12 col-lg-6">
+     <img src="{{path}}" hspace="100" vspace="30"></div><!--</td>-->
+     <!--<td>-->
+      <div class="col-md-6 col-12 col-lg-6" id="para">
+     {% for i in dic[loop.index0] %}
+
+            <p>{{i}}</p>
+      {% endfor %} 
+    </div>
+    </div>
+  <!--</td>
+ </tr>-->
+  {% endfor %}
+</div>
+
+<!--</table>-->
+
+
+<!--Make sure the form has the autocomplete function switched off:-->
+
+</body>
+</html>

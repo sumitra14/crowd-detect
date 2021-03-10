@@ -1,0 +1,14 @@
+{"chhatrapati shivaji maharaj international airport,mumbai":{
+"Sahar Terminal":"static/images/Chhatrapati Shivaji Maharaj International Airport,Mumbai/T1-car.jpg",
+"Santacruz Terminal":"static/images/Chhatrapati Shivaji Maharaj International Airport,Mumbai/T2-car.jpg",
+"Terminal-3":"static/images/Chhatrapati Shivaji Maharaj International Airport,Mumbai/T3-car.jpg"
+},
+"indira gandhi international airport,delhi":{
+	"Terminal 2":"static/images/Indira Gandhi International Airport,Delhi/T-2.jpg",
+	"Terminal 3":"static/images/Indira Gandhi International Airport,Delhi/T-3.jpg"
+},
+"kempegowda international airport,banglore":{
+	"Terminal-1":"static/images/Kempegowda international airport,Banglore/T-1.jpg",
+	"Terminal-2":"static/images/Kempegowda international airport,Banglore/T-2.jpg"
+}
+}

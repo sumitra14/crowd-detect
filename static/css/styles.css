@@ -1,0 +1,163 @@
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial; 
+  font-family: 'Merriweather', serif;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(plane.jpg);
+}
+#other{
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  margin-top:16%;
+  margin-left: 20%;
+  width:40%;
+}
+#SUBMIT{
+  position: relative;
+  margin-top: 16%;
+  margin-left: 2%;
+  height: 15%;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+h1{
+	text-align: center;
+	color: #008b8b;
+  margin: 3%;
+}
+img{
+  margin-left: 10%;
+  border: 2px solid black;
+  width:300px; 
+  height:300px;
+}
+p{
+font-weight: bold;
+font-size: 20px;
+color: #000080;
+}
+@media(min-width: 1200px){
+  .col-lg-6{
+    width: 50%;
+    float: left;
+  }
+  #para{
+    padding-top: 30px;
+  }
+}
+@media(max-width: 1199px) and (min-width: 992px){
+  .col-md-6{
+    width:50%;
+  }
+  #para{
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1080px) and (min-width:701px){
+  #main{
+  position: relative;
+  background-size:100% 400%;
+  background-repeat: no-repeat;
+  background-image:url(plane.jpg);
+  }
+   .autocomplete,#SUBMIT{
+     margin-top:40%;
+  }
+  #other{
+  background-size: 100% 300%; 
+  background-repeat: no-repeat;
+}
+}
+@media(max-width: 991px) and (min-width: 768px){
+  .col-sm-6{
+    width: 50%;
+    float: left;
+  }
+   #para{
+    padding-top: 30px;
+  }
+}
+@media(max-width: 767px){
+  .col-12{
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px){
+  #main{
+  position: relative;
+  background-size:100% 300%;
+  background-repeat: no-repeat;
+  background-image:url(plane.jpg);
+  }
+  .autocomplete,#SUBMIT{
+     margin-top:40%;
+  }
+  .autocomplete{
+    margin-left: 7%;
+     width: 56%;
+  }
+  img{
+    width: 250px;
+    height: 220px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
